@@ -1,0 +1,3 @@
+$stmt = $link->prepare("UPDATE add_bill1 SET date = ?, req_ref = ?, indus_id = ?, po_no = ?, district = ?, seeking_id = ?, seeking_opt = ?, state = ?, site_name = ?, total_amnt = ?, wcc_num = ?, wcc_rec_num = ?, pcw = ?, type_work = ?, mob = ?, proj_name = ?, net_amnt = ?, user = ? WHERE service_no = ?");
+
+$stmt->bind_param("sssssssssssssssssss", $currentDate, $req_ref, $indus_id, $po_no, $district, $seeking_id, $seeking_opt, $state, $site_name, $total_amnt, $wcc_num, $wcc_rec_num, $pcw, $type_work, $mob, $proj_name, $net_amnt, $empemail, $service_no);
